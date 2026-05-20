@@ -30,7 +30,7 @@ jobs:
         with:
           host: ${{ secrets.HOST_SERVER }}
           username: ubuntu
-          key: ${{ secrets.EC2_HOST_KEY }}
+          key: ${{ secrets.HOST_KEY }}
           script: |
             docker pull kufaa/jaybee:latest
             docker stop jaybee || true
